@@ -1,1 +1,153 @@
-{{ ... }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dabudo Mind Help - Psychological Tests</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>Dabudo Mind Help</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Psychological Insights</h1>
+                <p>Take scientifically-validated psychological tests and gain valuable insights about yourself.</p>
+                <a href="#categories" class="btn">Explore Tests</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Test Categories</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="personality">
+                    <div class="category-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Personality</h3>
+                    <p>Explore your personality traits and characteristics</p>
+                    <a href="#" class="btn-secondary view-tests">View Tests</a>
+                </div>
+                <div class="category-card" data-category="psychopathology">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Psychopathology</h3>
+                    <p>Assessment tools for psychological conditions</p>
+                    <a href="#" class="btn-secondary view-tests">View Tests</a>
+                </div>
+                <div class="category-card" data-category="attitude">
+                    <div class="category-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Attitude</h3>
+                    <p>Measures of perspective, satisfaction, and outlook</p>
+                    <a href="#" class="btn-secondary view-tests">View Tests</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="test-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-category-title">Category Tests</h2>
+            <div id="tests-list" class="tests-list">
+                <!-- Tests will be loaded here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Our Psychological Tests</h2>
+            <p>Our platform offers a wide range of scientifically-validated psychological assessments designed to provide valuable insights into various aspects of your mental and emotional well-being. All tests are administered following standard procedures and provide personalized results.</p>
+            <p>The tests are categorized into three main areas:</p>
+            <ul>
+                <li><strong>Personality Tests:</strong> Measure normal personality traits and characteristics</li>
+                <li><strong>Psychopathology Tests:</strong> Assess various psychological conditions and symptoms</li>
+                <li><strong>Attitude Tests:</strong> Evaluate perspectives, satisfaction, and outlook on life</li>
+            </ul>
+            <p>Please note that while these tests can provide valuable insights, they are not a substitute for professional psychological assessment or treatment.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Reach out to us!</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Dabudo Mind Help</h3>
+                    <p> 2025 All Rights Reserved</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="js/testsData.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
